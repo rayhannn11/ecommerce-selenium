@@ -11,8 +11,8 @@
         <methods>
           <include name="afterSuite"/>
           <include name="setup"/>
+          <include name="verifyLogo"/>
           <include name="tearDown"/>
-          <include name="verifyTitle"/>
           <include name="loadConfig"/>
         </methods>
       </class> <!-- com.mystore.testcases.IndexPageTest -->
