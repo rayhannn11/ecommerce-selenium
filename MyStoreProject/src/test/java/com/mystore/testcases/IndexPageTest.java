@@ -23,10 +23,10 @@ public class IndexPageTest extends BaseClass {
 	
 	private IndexPage indexPage;
 
-//	@Parameters("browser")
+	@Parameters("browser")
 	@BeforeMethod(groups = {"Smoke","Sanity","Regression"})
-	public void setup() {
-		launchApp("Chrome"); 
+	public void setup(String browser) {
+		launchApp(browser); 
 	}
 	
 	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
