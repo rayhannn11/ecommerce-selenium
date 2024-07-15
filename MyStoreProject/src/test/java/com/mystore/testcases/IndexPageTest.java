@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import com.mystore.base.BaseClass;
 import com.mystore.pageobjects.IndexPage;
+import com.mystore.pageobjects.LoginPage;
 import com.mystore.utility.Log;
 
 
@@ -38,6 +39,7 @@ public class IndexPageTest extends BaseClass {
 	public void verifyLogo() throws Throwable {
 		Log.startTestCase("verifyLogo");
 		indexPage= new IndexPage();
+		LoginPage login = new LoginPage();
 		boolean result=indexPage.validateLogo();
 		Assert.assertTrue(false);
 		Log.endTestCase("verifyLogo");
